@@ -42,7 +42,7 @@ add_link_options(-T ${CMAKE_SOURCE_DIR}/Ld/Link.ld)
 add_link_options(-march=rv32ec -mabi=ilp32e -nostartfiles -Xlinker --gc-sections -Wl,--print-memory-usage -Wl,-Map,${PROJECT_NAME}.map --specs=nano.specs --specs=nosys.specs)
 
 # 编译等级
-add_compile_options(-O3)
+add_compile_options(-O2)
 
 # 编译信息等级
 add_compile_options(-Wall)
